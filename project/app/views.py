@@ -249,7 +249,7 @@ def upload_location(request):
         return error_response("Invalid uid")
 
 
-@api_view('POST',)
+@api_view(['POST',])
 def upload_geofence(request):
     uid = request.POST.get('uid')
     gid = request.POST.get('gid')
